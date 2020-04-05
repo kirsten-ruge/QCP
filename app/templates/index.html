@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quarantine Coding Prompts</title>
+    <h1> Quarantine Coding Prompts</h1>
+</head>
+<body>
+{{ title }}<br>
+{{ prompt.prompt_text }}
+{%  if prompt.tag_text %}
+<b>Tags:</b> {{ prompt.tag_text }}
+{% else %}
+No Tags
+{% endif %}
+</body>
+</html>
