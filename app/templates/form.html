@@ -1,0 +1,18 @@
+<html><body>
+{% block content %}
+    <h1>Add a coding prompt!</h1>
+    <form action="/form" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.prompt.label }}<br>
+            {{ form.prompt(size=500) }}
+        </p>
+        <p>
+            {{ form.tag.label }}<br>
+            {{ form.tag(size=56) }}
+        </p>
+   <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}
+</body>
+</html>
